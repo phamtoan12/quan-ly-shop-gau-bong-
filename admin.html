@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Quản lý kho - Admin</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="loadAdmin()">
+  <header>
+    <div class="logo">Quản lý kho gấu bông</div>
+    <nav>
+      <a href="index.html">Quay lại trang chủ</a>
+      <a href="#" onclick="logout()">Đăng xuất</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Quản lý sản phẩm (Chỉ Admin)</h1>
+    <p><strong>Admin mặc định:</strong> username: admin | password: 123</p>
+
+    <h2>Thêm sản phẩm mới</h2>
+    <input type="text" id="p-name" placeholder="Tên gấu bông">
+    <input type="number" id="p-price" placeholder="Giá (VND)">
+    <input type="text" id="p-desc" placeholder="Mô tả">
+    <input type="text" id="p-img" placeholder="Link ảnh (tùy chọn)">
+    <button onclick="addProduct()">Thêm sản phẩm</button>
+
+    <h2>Danh sách sản phẩm</h2>
+    <div id="admin-list" class="product-list"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
